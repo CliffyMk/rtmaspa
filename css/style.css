@@ -7,10 +7,11 @@ html {
     zoom: 75%;
 }
 
- label {
+label {
     font-size: 1.3em;
     font-weight: bolder;
 }
+
 .hwmicon {
     height: 10%;
     width: 70%;
@@ -99,7 +100,7 @@ table tr td a.md-button {
 #form-views.ng-leave {
     position: absolute;
     transition: 1s all ease;
-    -moz-transition:1s all ease;
+    -moz-transition: 1s all ease;
     -webkit-transition: 1s all ease;
 }
 

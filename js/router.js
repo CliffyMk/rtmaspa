@@ -43,8 +43,8 @@
     });
 
     $stateProvider.state("drivedesc", {
-      url: '/drivedesc/:DriveID',
-      templateUrl: 'partials/drivedesc.html'
+       url: '/drivedesc/:DriveID',
+       templateUrl: 'partials/drivedesc.html'
     });
 
     $stateProvider.state("finddrives", {
