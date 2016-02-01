@@ -2,93 +2,94 @@
 <html lang="en" ng-app="RtmaApp">
 
 <head>
-   <meta charset="utf-8">
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/textAngular.css">
-   <link rel="stylesheet" href="css/font-awesome.min.css">
-   <link rel="stylesheet" href="css/angular-material.min.css">
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/textAngular.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/angular-material.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body ng-controller="SidebarCtrl">
-   <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
-      <md-toolbar>
-         <center>
-            <button class="close md-hue-1" ng-click="close()"><i class="fa fa-times"></i></button>
-            <h3>Recruitment Application</h3>
-         </center>
-      </md-toolbar>
-      <md-content>
-         <ul class="nav">
-            <li class="md-hue-1 md-subhead"><a ui-sref="createdrive">Create Drive</a></li>
-            <li class=" md-hue-1 md-subhead"><a ui-sref="finddrives">View Drives</a></li>
-            <li class=" md-hue-1 md-subhead"><a ui-sref="AddQuestion">Deposit Question</a></li>
-            <li class=" md-hue-1 md-subhead"><a ui-sref="ImportQuestions">Import Questions</a></li>
-            <li class=" md-hue-1 md-subhead"><a ui-sref="main">Candidates</a></li>
-            <li class=" md-hue-1 md-subhead"><a ui-sref="drivemonitor">Question</a></li>
-            <li class=" md-hue-1 md-subhead"><a ui-sref="drivemonitor">DriveMonitor</a></li>
-            <li class=" md-hue-1 md-subhead"><a ui-sref="Registration.personalDetails">Registration</a></li>
-            <li class=" md-hue-1 md-subhead"><a ui-sref="candidatelogin">Candidate Login</a></li>
-         </ul>
-      </md-content>
-   </md-sidenav>
-   <div class="container">
-      <div class="col-md-1">
-         <md-button class="md-fab md-primary md-hue-2" ng-click="toggle()">
-            <i class="fa fa-bars menufab"></i>
-      </div>
-      <div class="col-md-11" class="animation">
-         <div ui-view></div>
-      </div>
-   </div>
-   <!--third party dependencies-->
-   <script src="js/lib/jquery.min.js"></script>
-   <script src="js/lib/bootstrap.min.js"></script>
-   <script src="js/lib/angular.min.js"></script>
-   <script src="js/lib/angular-animate.min.js"></script>
-   <script src="js/lib/angular-aria.min.js"></script>
-   <script src="js/lib/angular-material.min.js"></script>
-   <script src="js/lib/angular-ui-router.min.js"></script>
-   <script src="js/lib/rangy.min.js"></script>
-   <script src="js/lib/textAngular-sanitize.min.js"></script>
-   <script src="js/lib/textAngular.min.js"></script>
-   <script src="js/lib/textAngularSetup.js"></script>
-   <script src="js/lib/angular-mocks.js"></script>
-   <!--third partydependencies-->
-   <!--Main Module-->
-   <script src="js/app.js"></script>
-   <script src="js/router.js"></script>
-   <script src="js/theme.js"></script>
-   <script src="js/mocker.js"></script>
-   <!--Main Module-->
-   <!--controller-->
-   <script src="js/services/DriveService.js"></script>
-   <script src="js/services/QuestionService.js"></script>
-   <script src="js/controllers/PersonalDetailsController.js"></script>
-   <script src="js/controllers/ContactDetailsController.js"></script>
-   <script src="js/controllers/AcadDetailsController.js"></script>
-   <script src="js/controllers/ExtraDetailsController.js"></script>
-   <script src="js/controllers/PersonalDetailsController.js"></script>
-   <script src="js/controllers/SidebarController.js"></script>
-   <script src="js/controllers/LoginController.js"></script>
-   <script src="js/controllers/FindDrivesController.js"></script>
-   <script src="js/controllers/findstudentcontroller.js"></script>
-   <script src="js/controllers/ImportController.js"></script>
-   <script src="js/controllers/CreateDriveController.js"></script>
-   <script src="js/controllers/AddQuestionController.js"></script>
-   <script src="js/controllers/SolutionsController.js"></script>
-   <script src="js/controllers/drivemonitorcontroller.js"></script>
-   <script src="js/controllers/drivedesccontroller.js"></script>
-   <script src="js/controllers/dialogcontroller.js"></script>
-   <script src="js/controllers/LoginController.js"></script>
-   <script src="js/controllers/StudentRegistrationController.js"></script>
-   <!--controller-->
-   <!--services-->
-   <script src="js/services/DriveService.js"></script>
-   <script src="js/services/QuestionService.js"></script>
-   <script src="js/services/RegistrationService.js"></script>
-   <!--sevices-->
+    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+        <md-toolbar>
+            <center>
+                <button class="close md-hue-1" ng-click="close()"><i class="fa fa-times"></i></button>
+                <h3>Recruitment Application</h3>
+            </center>
+        </md-toolbar>
+        <md-content>
+            <ul class="nav">
+                <li class="md-hue-1 md-subhead"><a ui-sref="createdrive">Create Drive</a></li>
+                <li class=" md-hue-1 md-subhead"><a ui-sref="finddrives">View Drives</a></li>
+                <li class=" md-hue-1 md-subhead"><a ui-sref="AddQuestion">Deposit Question</a></li>
+                <li class=" md-hue-1 md-subhead"><a ui-sref="ImportQuestions">Import Questions</a></li>
+                <li class=" md-hue-1 md-subhead"><a ui-sref="main">Candidates</a></li>
+                <li class=" md-hue-1 md-subhead"><a ui-sref="drivemonitor">Question</a></li>
+                <li class=" md-hue-1 md-subhead"><a ui-sref="drivemonitor">DriveMonitor</a></li>
+                <li class=" md-hue-1 md-subhead"><a ui-sref="Registration.personalDetails">Registration</a></li>
+                <li class=" md-hue-1 md-subhead"><a ui-sref="candidatelogin">Candidate Login</a></li>
+            </ul>
+        </md-content>
+    </md-sidenav>
+    <div class="container">
+        <div class="col-md-1">
+            <md-button class="md-fab md-primary md-hue-2" ng-click="toggle()">
+                <i class="fa fa-bars menufab"></i>
+            </md-button>
+        </div>
+        <div class="col-md-11" class="animation">
+            <div ui-view></div>
+        </div>
+    </div>
+    <!--third party dependencies-->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-animate.min.js"></script>
+    <script src="js/lib/angular-aria.min.js"></script>
+    <script src="js/lib/angular-material.min.js"></script>
+    <script src="js/lib/angular-ui-router.min.js"></script>
+    <script src="js/lib/rangy.min.js"></script>
+    <script src="js/lib/textAngular-sanitize.min.js"></script>
+    <script src="js/lib/textAngular.min.js"></script>
+    <script src="js/lib/textAngularSetup.js"></script>
+    <script src="js/lib/angular-mocks.js"></script>
+    <!--third partydependencies-->
+    <!--Main Module-->
+    <script src="js/app.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/mocker.js"></script>
+    <!--Main Module-->
+    <!--controller-->
+    <script src="js/services/DriveService.js"></script>
+    <script src="js/services/QuestionService.js"></script>
+    <script src="js/controllers/PersonalDetailsController.js"></script>
+    <script src="js/controllers/ContactDetailsController.js"></script>
+    <script src="js/controllers/AcadDetailsController.js"></script>
+    <script src="js/controllers/ExtraDetailsController.js"></script>
+    <script src="js/controllers/PersonalDetailsController.js"></script>
+    <script src="js/controllers/SidebarController.js"></script>
+    <script src="js/controllers/LoginController.js"></script>
+    <script src="js/controllers/FindDrivesController.js"></script>
+    <script src="js/controllers/findstudentcontroller.js"></script>
+    <script src="js/controllers/ImportController.js"></script>
+    <script src="js/controllers/CreateDriveController.js"></script>
+    <script src="js/controllers/AddQuestionController.js"></script>
+    <script src="js/controllers/SolutionsController.js"></script>
+    <script src="js/controllers/drivemonitorcontroller.js"></script>
+    <script src="js/controllers/drivedesccontroller.js"></script>
+    <script src="js/controllers/dialogcontroller.js"></script>
+    <script src="js/controllers/LoginController.js"></script>
+    <script src="js/controllers/StudentRegistrationController.js"></script>
+    <!--controller-->
+    <!--services-->
+    <script src="js/services/DriveService.js"></script>
+    <script src="js/services/QuestionService.js"></script>
+    <script src="js/services/RegistrationService.js"></script>
+    <!--sevices-->
 </body>
 
 </html>
